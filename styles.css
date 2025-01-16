@@ -1,6 +1,5 @@
-    font-family: 'Gilroy';
-    src: url('https://cdn.jsdelivr.net/gh/skb10x/Gilroy-SATV@main/Gilroy.css') format('css');
-}
+@import url('@import url('https://fuentes.solargentinotv.com.ar/netflixsans.css');
+
         body {
             margin: 0;
             padding: 0;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrapLegion - Productora Discográfica</title>
+    <link rel="icon" href="LogoTLegion1.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TrapLegion - Productora Discográfica</h1>
+    </header>
+
+    <nav>
+        <a href="index">Inicio</a>
+      <a href="distribucion" class="active">Inicio</a>
+		<a href="latestreleases">Últimos Lanzamientos</a>
+        <a href="artists">Nuestros Artistas</a>
+        <a href="contact">Contacto</a>
+		<a href="knowus">Quiénes Somos</a>
+    </nav>
+
+    <!-- Formulario de Subida de Contenido -->
+    <div class="content">
+        <form action="submit.php" method="POST" enctype="multipart/form-data">
+            <h2>Sube tu Canción o Álbum</h2>
+            
+            <label for="song-title">Nombre de la Canción o Álbum:</label>
+            <input type="text" id="song-title" name="song-title" required>
+            
+            <label for="release-date">Fecha de Lanzamiento:</label>
+            <input type="date" id="release-date" name="release-date" required>
+            
+            <label for="genre">Género Musical:</label>
+            <input type="text" id="genre" name="genre" required>
+            
+            <label for="song-file">Sube tu Canción/Álbum (mp3, wav):</label>
+            <input type="file" id="song-file" name="song-file" accept="audio/*" required>
+
+            <label for="cover-image">Imagen de Portada (JPG, PNG):</label>
+            <input type="file" id="cover-image" name="cover-image" accept="image/*" required>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Sección sobre nosotros -->
+    <div class="about-section">
+        <h2>Sobre TrapLegion</h2>
+        <p>En TrapLegion, te ayudamos a distribuir tu música a las principales plataformas como Spotify, Apple Music, Deezer, entre otras.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <h2>TrapLegion 2019 - 2025 © Todos Los Derechos Reservados</h2>
+    </footer>
+
+    <script src="script.js"></script> <!-- Aquí debes incluir el JS si es necesario -->
+</body>
+</html>
